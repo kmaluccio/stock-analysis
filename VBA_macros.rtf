@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Example Macros in stock analysis VBA, Module 2 in Boot Camp\
+\
+Sub MacroCheck()\
+\
+    Dim testMessage As String\
+\
+    testMessage = "Hello World!"\
+    \
+    MsgBox (testMessage)\
+    \
+End Sub\
+\
+Sub DQAnalysis()\
+    Worksheets("DQ Analysis").Activate\
+    \
+    Range("A1").Value = "DAQO (Ticker: DQ)"\
+    \
+    'Create a header row\
+    Cells(3, 1).Value = "Year"\
+    Cells(3, 2).Value = "Total Daily Volume"\
+    Cells(3, 3).Value = "Return"\
+    \
+End Sub\
+\
+Sub squareNums()\
+'Make a list of square  numbers\
+For i = 1 To 10\
+\
+    Cells(1, i).Value = i * i\
+    \
+Next i\
+End Sub\
+\
+\
+\
+}
